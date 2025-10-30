@@ -6,7 +6,8 @@
     <title>Rishav Kumar portfolio</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-bitcount">
+  <body class="font-bitcount overflow-x-hidden">
+    <!-- Header -->
     <header>
       <nav
         class="fixed top-0 z-10 flex h-15 w-full items-center justify-between bg-gray-600 px-4 py-2 text-2xl font-bold text-white"
@@ -16,7 +17,7 @@
           <li><a href="#" class="hover:text-black">Home</a></li>
           <li><a href="#aboutme" class="hover:text-black">About me</a></li>
           <li><a href="#projects" class="hover:text-black">Projects</a></li>
-          <li><a href="#" class="hover:text-black">Contact</a></li>
+          <li><a href="#contact" class="hover:text-black">Contact</a></li>
         </ul>
         <div class="md:hidden">
           <button class="flex flex-col justify-center gap-1 py-2">
@@ -28,6 +29,7 @@
       </nav>
     </header>
 
+    <!-- Home -->
     <section class="h-screen bg-[url('./bi3.jpg')] bg-cover bg-center">
       <div class="flex flex-col justify-center gap-5 pt-52 text-center">
         <p class="text-5xl font-bold text-white drop-shadow-[0_0_10px_#f87171]">
@@ -45,6 +47,7 @@
       </div>
     </section>
 
+    <!-- About me -->
     <section
       class="flex h-screen items-center bg-gray-800 py-16 text-white"
       id="aboutme"
@@ -52,16 +55,15 @@
       <div
         class="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 md:flex-row"
       >
-        <div class="shrink-0">
+        <div class="shrink-0 max-[770px]:m-0 max-[770px]:p-0">
           <img
             src="./pp.jpg"
             alt="Rishav Kumar"
-            class="h-40 w-40 rounded-full border-4 border-red-400 shadow-lg max-[770px]:h-24 max-[770px]:w-24"
+            class="h-40 w-40 rounded-full border-4 border-red-400 shadow-lg max-[770px]:h-24 max-[770px]:w-24 max-[500px]:hidden"
           />
         </div>
 
         <div class="text-center md:text-left">
-          
           <p
             class="mb-16 text-lg text-gray-300 max-[770px]:mt-2 max-[770px]:mb-2 sm:leading-relaxed"
           >
@@ -89,76 +91,230 @@
       </div>
     </section>
 
+    <!-- Projects -->
     <section
       id="projects"
-      class="flex min-h-screen flex-col bg-gray-900 py-16 text-white"
+      class="min-h-screen max-w-full bg-gray-900 py-16 text-white"
     >
-      <div>
-        <p class="mt-10 text-center text-4xl font-semibold text-red-600">
-          My projects
-        </p>
-      </div>
-      <div class="ml-4">
-        <div class="flex flex-col gap-1">
-          <p class="mt-10 text-2xl font-bold">Jukebox</p>
-          <p>
+      <h2 class="mt-10 text-center text-4xl font-semibold text-red-600">
+        My Projects
+      </h2>
+
+      <div
+        class="mx-auto mt-8 grid gap-10 px-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <!-- Project 1 -->
+        <div
+          class="rounded-xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-3 text-2xl font-bold text-red-400">Jukebox</h3>
+          <p class="text-sm leading-relaxed">
             A console-based music player application that allows users to create
-            and manage personalized playlists. Users can add songs from an
-            available pool, play their playlists, and navigate through songs
-            using forward or backward controls. The system efficiently models
-            entities like songs, users, and playlists using robust
-            object-oriented design principles to ensure scalability and
-            maintainability.
+            and manage playlists, add songs, and play them using robust OOP
+            principles.
           </p>
-          <p>
-            Technologies Used: Java, Object-Oriented Design, Unit Testing,
-            Design Patterns, SOLID Principles
+          <p class="mt-3 text-sm text-gray-400">
+            <strong>Technologies:</strong> Java, OOD, Unit Testing, SOLID
           </p>
           <a
-            class="text-gray-400"
+            class="mt-4 inline-block text-red-400 hover:underline"
             href="https://github.com/CrioDo/rishavkumar-nit-ME_OBJECT_MODELING_V2/tree/master/src/main/java/com/crio/jukebox"
-            >Link to the project</a
+            >View Project →</a
           >
         </div>
-        <div class="flex flex-col gap-1">
-          <p class="mt-10 text-2xl font-bold">Xmeme</p>
-          <p>
-            Developed a backend application from scratch using Spring Boot to
-            enable users to post and retrieve memes via RESTful APIs.
-            Implemented essential GET and POST endpoints for meme management,
-            integrating MongoDB for data persistence. Designed the service to
-            ensure smooth data serialization/deserialization using Jackson and
-            containerized the application using Docker for easy deployment.
+
+        <!-- Project 2 -->
+        <div
+          class="rounded-xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-3 text-2xl font-bold text-red-400">XMeme</h3>
+          <p class="text-sm leading-relaxed">
+            Built a backend with Spring Boot to post and fetch memes using REST
+            APIs and MongoDB. Used Jackson for JSON and Docker for deployment.
           </p>
-          <p>
-            Technologies Used: Core Java, Spring Boot, Spring Data, REST API,
-            MongoDB, Jackson, Docker
+          <p class="mt-3 text-sm text-gray-400">
+            <strong>Technologies:</strong> Java, Spring Boot, MongoDB, Docker
           </p>
           <a
-            class="text-gray-400"
+            class="mt-4 inline-block text-red-400 hover:underline"
             href="https://github.com/rishavkumarnit/rishavkumar-nit-ME_BUILDOUT_XMEME_JAVA-master"
-            >Link to the project</a
+            >View Project →</a
           >
         </div>
-        <div class="flex flex-col gap-1">
-          <p class="mt-10 text-2xl font-bold">Qmoney</p>
-          <p>
-            Developed a visual stock portfolio analyzer to assist portfolio
-            managers with trade recommendations. Implemented core portfolio
-            logic, integrated Tiingo REST APIs for stock data, and computed
-            annualized returns based on purchase date and holding period.
+
+        <!-- Project 3 -->
+        <div
+          class="rounded-xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-3 text-2xl font-bold text-red-400">QMoney</h3>
+          <p class="text-sm leading-relaxed">
+            A stock portfolio analyzer that uses Tiingo APIs to calculate
+            annualized returns and assist portfolio managers with trade
+            recommendations.
           </p>
-          <p>
-            Technologies Used: Java, REST API, Jackson, Exception Handling,
-            Gradle
+          <p class="mt-3 text-sm text-gray-400">
+            <strong>Technologies:</strong> Java, REST API, Jackson, Gradle
           </p>
           <a
-            class="text-gray-400"
+            class="mt-4 inline-block text-red-400 hover:underline"
             href="https://github.com/rishavkumarnit/rishavkumar-nit-ME_QMONEY_V2-master"
-            >Link to the project</a
+            >View Project →</a
+          >
+        </div>
+
+        <!-- Project 4 -->
+        <div
+          class="rounded-xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-3 text-2xl font-bold text-red-400">
+            Responsive webpage
+          </h3>
+          <p class="text-sm leading-relaxed">
+            A responsive home decor website built with modern design and smooth
+            transitions. Fully optimized for all screen sizes and deployed on
+            Vercel.
+          </p>
+          <p class="mt-3 text-sm text-gray-400">
+            <strong>Technologies:</strong> HTML, Tailwind CSS, JavaScript,
+            Vercel
+          </p>
+          <a
+            class="mt-4 inline-block text-red-400 hover:underline"
+            href="https://responsive-webpage-blush.vercel.app/"
+            >View Project →</a
+          >
+        </div>
+
+        <!-- Project 5 -->
+        <div
+          class="rounded-2xl p-6 shadow-lg hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-4 text-2xl font-bold text-red-400">Instagram Clone</h3>
+          <p class="mb-4 text-sm leading-relaxed">
+            Built a full-featured social media clone using modern web
+            technologies and responsive design, deployed live for users to
+            explore.
+          </p>
+          <p class="mb-4 text-sm text-gray-400">
+            <strong>Technologies:</strong> HTML, CSS, JavaScript, Vercel
+          </p>
+          <a
+            class="inline-block text-red-400 hover:underline"
+            href="https://instagram-clone-lac-six.vercel.app/"
+            target="_blank"
+            >View Live →</a
+          >
+        </div>
+
+        <!-- Project 6 -->
+        <div
+          class="rounded-2xl p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-red-400/40"
+        >
+          <h3 class="mb-4 text-2xl font-bold text-red-400">Bouncing Ball</h3>
+          <p class="mb-4 text-sm leading-relaxed">
+            A physics-based interactive web game where a ball bounces
+            dynamically across obstacles and boundaries, showcasing real-time
+            animations and responsive design.
+          </p>
+          <p class="mb-4 text-sm text-gray-400">
+            <strong>Technologies:</strong> HTML, CSS, JavaScript, Vercel
+          </p>
+          <a
+            class="inline-block text-red-400 hover:underline"
+            href="https://bouncing-ball-zeta.vercel.app/"
+            target="_blank"
+            >View Live →</a
           >
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="flex flex-col items-center gap-6 bg-gray-800 py-16 text-white"
+    >
+      <!-- Title -->
+      <h2 class="text-4xl font-semibold text-red-600">Contact Me</h2>
+
+      <!-- Contact Form -->
+      <form
+        action="#"
+        class="mt-10 flex w-[90%] flex-wrap justify-center gap-6 sm:w-2/3"
+      >
+        <div class="flex w-full flex-col sm:w-[45%] sm:mr-8">
+          <label for="name" class="mb-1 text-sm font-medium">Name</label>
+          <input
+            id="name"
+            type="text"
+            class="rounded-md bg-gray-600 p-2 text-white focus:ring-2 focus:ring-red-500 focus:outline-none"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div class="flex w-full flex-col sm:w-[45%] sm:ml-8">
+          <label for="email" class="mb-1 text-sm font-medium">Email</label>
+          <input
+            id="email"
+            type="email"
+            class="rounded-md bg-gray-600 p-2 text-white focus:ring-2 focus:ring-red-500 focus:outline-none"
+            placeholder="Your email"
+          />
+        </div>
+
+        <div class="flex w-full flex-col">
+          <label for="message" class="mb-1 text-sm font-medium">Message</label>
+          <textarea
+            id="message"
+            rows="4"
+            class="rounded-md bg-gray-600 p-2 text-white focus:ring-2 focus:ring-red-500 focus:outline-none"
+            placeholder="Your message..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="mt-5 rounded-full bg-red-500 px-8 py-3 text-lg font-semibold shadow-lg transition duration-300 hover:cursor-pointer hover:bg-red-600 hover:shadow-red-400/50"
+        >
+          Submit
+        </button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="mt-8 flex flex-wrap justify-center gap-8">
+        <a href="https://www.linkedin.com/in/rishavkumarnit/" target="_blank">
+          <img class="h-8 w-8" src="./LinkedInlogo.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/rishavkumarnit" target="_blank">
+          <img class="h-8 w-8" src="./githublogo.png" alt="GitHub" />
+        </a>
+        <a href="https://leetcode.com/u/user3574LS/" target="_blank">
+          <img class="h-8 w-8" src="./leetcodelogo.png" alt="LeetCode" />
+        </a>
+        <a href="https://x.com/RishavKumar_25" target="_blank">
+          <img class="h-8 w-8" src="./twitterlogo.jpg" alt="Twitter" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-gray-300">
+      <div
+        class="container mx-auto flex flex-col items-center justify-center gap-4 px-4 sm:flex-row sm:justify-between"
+      >
+        <!-- Copyright -->
+        <p class="text-center text-sm sm:text-left">
+          © 2025 <span class="font-semibold text-white">Rishav Kumar</span>.
+          All rights reserved.
+        </p>
+
+        <!-- Footer Links -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="#" class="transition hover:text-white">Privacy Policy</a>
+          <a href="#" class="transition hover:text-white">Terms of Service</a>
+          <a href="#" class="transition hover:text-white">Contact</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
