@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishav Kumar portfolio</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="font-bitcount">
+    <header>
+      <nav
+        class="fixed top-0 z-10 flex h-15 w-full items-center justify-between bg-gray-600 px-4 py-2 text-2xl font-bold text-white"
+      >
+        <div>Rishav Kumar</div>
+        <ul class="hidden gap-6 md:flex">
+          <li><a href="#" class="hover:text-black">Home</a></li>
+          <li><a href="#aboutme" class="hover:text-black">About me</a></li>
+          <li><a href="#projects" class="hover:text-black">Projects</a></li>
+          <li><a href="#" class="hover:text-black">Contact</a></li>
+        </ul>
+        <div class="md:hidden">
+          <button class="flex flex-col justify-center gap-1 py-2">
+            <span class="block h-0.5 w-6 bg-white"></span>
+            <span class="block h-0.5 w-6 bg-white"></span>
+            <span class="block h-0.5 w-6 bg-white"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-screen bg-[url('./bi3.jpg')] bg-cover bg-center">
+      <div class="flex flex-col justify-center gap-5 pt-52 text-center">
+        <p class="text-5xl font-bold text-white drop-shadow-[0_0_10px_#f87171]">
+          Hello, I'm Rishav Kumar
+        </p>
+        <p class="text-5xl font-bold text-white drop-shadow-[0_0_10px_#f87171]">
+          Full-Stack Software Engineer
+        </p>
+        <a
+          href="#projects"
+          class="w-1xl mt-5 self-center rounded-full bg-red-500 px-6 py-3 text-lg font-semibold text-white shadow-lg transition duration-300 hover:bg-red-600 hover:shadow-red-400/50"
+        >
+          View My Work
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="flex h-screen items-center bg-gray-800 py-16 text-white"
+      id="aboutme"
+    >
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 md:flex-row"
+      >
+        <div class="shrink-0">
+          <img
+            src="./pp.jpg"
+            alt="Rishav Kumar"
+            class="h-40 w-40 rounded-full border-4 border-red-400 shadow-lg max-[770px]:h-24 max-[770px]:w-24"
+          />
+        </div>
+
+        <div class="text-center md:text-left">
+          <p
+            class="mb-16 text-lg text-gray-300 max-[770px]:mt-2 max-[770px]:mb-2 sm:leading-relaxed"
+          >
+            I’m a
+            <span class="font-semibold text-red-400"
+              >Full-Stack Software Engineer</span
+            >
+            with a strong foundation in Java, Spring Boot, and modern web
+            technologies. Experienced in designing scalable backend systems,
+            REST APIs, and building responsive front-end interfaces using HTML,
+            CSS, JavaScript, and React for seamless full-stack development.
+          </p>
+
+          <div class="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
+            <span class="rounded-lg bg-gray-700 px-3 py-2">Java</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">Spring Boot</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">REST APIs</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">HTML</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">CSS</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">JavaScript</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">PostgreSQL</span>
+            <span class="rounded-lg bg-gray-700 px-3 py-2">Node.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="projects"
+      class="flex min-h-screen flex-col bg-gray-900 py-16 text-white"
+    >
+      <div>
+        <p class="mt-10 text-center text-4xl font-semibold text-red-600">
+          My projects
+        </p>
+      </div>
+      <div class="ml-4">
+        <div class="flex flex-col gap-1">
+          <p class="mt-10 text-2xl font-bold">Jukebox</p>
+          <p>
+            A console-based music player application that allows users to create
+            and manage personalized playlists. Users can add songs from an
+            available pool, play their playlists, and navigate through songs
+            using forward or backward controls. The system efficiently models
+            entities like songs, users, and playlists using robust
+            object-oriented design principles to ensure scalability and
+            maintainability.
+          </p>
+          <p>
+            Technologies Used: Java, Object-Oriented Design, Unit Testing,
+            Design Patterns, SOLID Principles
+          </p>
+          <a
+            class="text-gray-400"
+            href="https://github.com/CrioDo/rishavkumar-nit-ME_OBJECT_MODELING_V2/tree/master/src/main/java/com/crio/jukebox"
+            >Link to the project</a
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <p class="mt-10 text-2xl font-bold">Xmeme</p>
+          <p>
+            Developed a backend application from scratch using Spring Boot to
+            enable users to post and retrieve memes via RESTful APIs.
+            Implemented essential GET and POST endpoints for meme management,
+            integrating MongoDB for data persistence. Designed the service to
+            ensure smooth data serialization/deserialization using Jackson and
+            containerized the application using Docker for easy deployment.
+          </p>
+          <p>
+            Technologies Used: Core Java, Spring Boot, Spring Data, REST API,
+            MongoDB, Jackson, Docker
+          </p>
+          <a
+            class="text-gray-400"
+            href="https://github.com/rishavkumarnit/rishavkumar-nit-ME_BUILDOUT_XMEME_JAVA-master"
+            >Link to the project</a
+          >
+        </div>
+        <div class="flex flex-col gap-1">
+          <p class="mt-10 text-2xl font-bold">Qmoney</p>
+          <p>
+            Developed a visual stock portfolio analyzer to assist portfolio
+            managers with trade recommendations. Implemented core portfolio
+            logic, integrated Tiingo REST APIs for stock data, and computed
+            annualized returns based on purchase date and holding period.
+          </p>
+          <p>
+            Technologies Used: Java, REST API, Jackson, Exception Handling,
+            Gradle
+          </p>
+          <a
+            class="text-gray-400"
+            href="https://github.com/rishavkumarnit/rishavkumar-nit-ME_QMONEY_V2-master"
+            >Link to the project</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
